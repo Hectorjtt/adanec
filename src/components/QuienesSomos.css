@@ -1,0 +1,920 @@
+.quienes-somos-page {
+  min-height: calc(100vh - 200px);
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 0;
+}
+
+.quienes-somos-content {
+  padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Sección principal con video y logo */
+.quienes-somos-hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 0 60px;
+  margin-bottom: 30px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.video-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.youtube-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.adanec-logo {
+  font-family: 'More Sugar', sans-serif;
+  font-size: 72px;
+  font-weight: normal;
+  color: #e74c3c;
+  text-shadow: 
+    3px 3px 0px #000000,
+    -3px -3px 0px #000000,
+    3px -3px 0px #000000,
+    -3px 3px 0px #000000,
+    0px 3px 0px #000000,
+    0px -3px 0px #000000,
+    3px 0px 0px #000000,
+    -3px 0px 0px #000000,
+    2px 2px 0px #000000,
+    -2px -2px 0px #000000,
+    2px -2px 0px #000000,
+    -2px 2px 0px #000000,
+    0px 2px 0px #000000,
+    0px -2px 0px #000000,
+    2px 0px 0px #000000,
+    -2px 0px 0px #000000;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adanec-slogan {
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+
+/* Sección de información */
+.info-section {
+  padding: 0 60px;
+  margin-bottom: 30px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.quienes-somos-page .info-title {
+  font-size: 25px !important;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 0;
+  line-height: 1.2;
+  text-align: left !important;
+  white-space: nowrap;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.info-text {
+  font-size: 25px;
+  color: black;
+  line-height: 1;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Sección de estadísticas */
+.stats-section {
+  padding: 40px 60px;
+  margin-bottom: 30px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.stat-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.stat-icon-circle {
+  width: 120px;
+  height: 120px;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stat-icon-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.6);
+}
+
+.stat-card:first-child .stat-icon-image {
+  transform: scale(1.6) translateY(-3px);
+}
+
+.stat-card:nth-child(3) .stat-icon-image {
+  transform: scale(1.6) translateY(3px) translateX(-2px);
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: black;
+  line-height: 1.2;
+}
+
+/* Sección de Misión, Visión y Objetivo */
+.mission-vision-section {
+  padding: 40px 60px;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-vision-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mv-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mv-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mv-icon-circle {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mv-icon-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+.mv-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mv-title {
+  font-family: 'More Sugar', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  color: #e74c3c;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 
+    2px 2px 0px #000000,
+    -2px -2px 0px #000000,
+    2px -2px 0px #000000,
+    -2px 2px 0px #000000,
+    0px 2px 0px #000000,
+    0px -2px 0px #000000,
+    2px 0px 0px #000000,
+    -2px 0px 0px #000000,
+    1px 1px 0px #000000,
+    -1px -1px 0px #000000,
+    1px -1px 0px #000000,
+    -1px 1px 0px #000000,
+    0px 1px 0px #000000,
+    0px -1px 0px #000000,
+    1px 0px 0px #000000,
+    -1px 0px 0px #000000;
+  letter-spacing: 1px;
+}
+
+.mv-text {
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+/* Sección de Valores */
+.values-section {
+  padding: 20px 60px 40px 60px;
+  margin-bottom: 30px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.values-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.values-subtitle {
+  font-size: 20px;
+  color: black;
+  margin: 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon-circle {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.value-icon-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.6);
+}
+
+.value-card:nth-child(2) .value-icon-image {
+  transform: scale(1.6) translateX(3px);
+}
+
+.value-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .video-container {
+    max-width: 100%;
+  }
+  
+  .adanec-logo {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .adanec-slogan {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .logo-section {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info-section {
+    padding: 0 20px;
+  }
+  
+  .info-title {
+    font-size: 28px;
+  }
+  
+  .info-text {
+    font-size: 16px;
+  }
+  
+  .stats-section {
+    padding: 40px 20px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .stat-icon-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .stat-icon-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .stat-number {
+    font-size: 16px;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .stat-icon-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .stat-icon-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .stat-number {
+    font-size: 14px;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+  }
+  
+  .mission-vision-section {
+    padding: 30px 20px;
+  }
+  
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .values-section {
+    padding: 30px 20px;
+  }
+  
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .values-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 0 15px;
+  }
+  
+  .video-container {
+    border-radius: 10px;
+  }
+  
+  .adanec-logo {
+    font-size: 36px;
+  }
+  
+  .adanec-slogan {
+    font-size: 18px;
+  }
+  
+  .info-section {
+    padding: 0 15px;
+  }
+  
+  .info-title {
+    font-size: 24px;
+  }
+  
+  .play-button-large {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .play-icon-large {
+    font-size: 24px;
+  }
+  
+  .mission-vision-section {
+    padding: 30px 15px;
+  }
+  
+  .values-section {
+    padding: 30px 15px;
+  }
+  
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .values-title {
+    font-size: 24px;
+  }
+  
+  .mv-title {
+    font-size: 20px;
+  }
+  
+  .mv-text {
+    font-size: 14px;
+  }
+  
+  .coverage-section {
+    padding: 30px 20px;
+  }
+  
+  .coverage-visuals {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .coverage-title {
+    font-size: 28px;
+  }
+  
+  .donors-alliances-section {
+    padding: 30px 20px;
+  }
+  
+  .donors-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .donors-alliances-title {
+    font-size: 28px;
+  }
+  
+  .logo-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .donor-logo-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .donors-circles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 40px 20px 0 20px;
+    max-width: 400px;
+  }
+  
+  .donors-circle-content {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .donors-circle-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .donors-circle-text {
+    font-size: 10px;
+  }
+  
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .carousel-arrow-left {
+    left: 10px;
+  }
+  
+  .carousel-arrow-right {
+    right: 10px;
+  }
+}
+
+/* Sección de Cobertura Nacional */
+.coverage-section {
+  padding: 40px 60px;
+  margin-bottom: -50px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.coverage-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.coverage-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.coverage-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.coverage-title-highlight {
+  color: #e74c3c;
+}
+
+.coverage-description {
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.coverage-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.mapa-image {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  filter: none !important;
+}
+
+.staff-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e74c3c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Donadores y Alianzas */
+.donors-alliances-section {
+  padding: 40px 60px;
+  margin-bottom: 30px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.donors-alliances-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donors-alliances-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.donors-alliances-description {
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+  margin: 0 auto 40px auto;
+  max-width: 800px;
+}
+
+.donors-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.logo-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.donor-logo-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Grid de círculos de donadores */
+.donors-circles-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 15px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 0 20px;
+}
+
+/* Círculo de donadores */
+.donors-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 90px;
+}
+
+.donors-circle-content {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.donors-circle-content:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.donors-circle-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.donors-circle-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Estilos del carrusel */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide-content {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-arrow {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.carousel-arrow:hover {
+  background: #c0392b;
+}
+
+.carousel-arrow-left {
+  left: 20px;
+}
+
+.carousel-arrow-right {
+  right: 20px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #e74c3c;
+}
+
+.carousel-dot:hover {
+  background: #c0392b;
+}

@@ -1,0 +1,99 @@
+.fechas-relevantes {
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.fechas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.fecha-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.calendario-imagen-container {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.calendario-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.mes {
+  font-family: 'More Sugar', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.dia {
+  font-family: 'More Sugar', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.fecha-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  max-width: 200px;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .fechas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .calendario-imagen-container {
+    width: 100px;
+    height: 120px;
+  }
+  
+  .mes {
+    font-size: 16px;
+  }
+  
+  .dia {
+    font-size: 28px;
+  }
+  
+  .fecha-titulo {
+    font-size: 16px;
+  }
+}

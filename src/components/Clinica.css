@@ -1,0 +1,581 @@
+.clinica-page {
+  min-height: calc(100vh - 200px);
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.clinica-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: 3px solid #2c3e50;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #2c3e50;
+  z-index: 100;
+}
+
+.clinica-content {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sección principal */
+.hero-section {
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  max-width: none;
+}
+
+.clinica-main-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 auto 10px auto;
+  line-height: 1.1;
+  text-align: center !important;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.clinica-main-title-highlight {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 auto 30px auto;
+  line-height: 1.1;
+  text-align: center !important;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.clinica-main-description {
+  font-size: 22px;
+  color: #000000;
+  margin: 0 auto 5px auto;
+  line-height: 1.5;
+  max-width: 800px;
+  text-align: center !important;
+  padding: 0 20px;
+}
+
+/* Sección de información */
+.info-section {
+  margin-bottom: 60px;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon-circle {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #2c3e50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Fondo morado específico para el segundo icono (corazón) */
+.info-card:nth-child(2) .info-icon-circle {
+  background: #f4e5ff !important;
+}
+
+.heart-background {
+  background: #f4e5ff !important;
+}
+
+.info-icon-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+/* Clases específicas para cada imagen individual */
+.info-icon-image-1 {
+  /* Primera imagen - ¿Qué son las cardiopatías? */
+  transform: scale(1.1) translateX(5px);
+  filter: brightness(1.0);
+}
+
+.info-icon-image-2 {
+  /* Segunda imagen - ¿Se pueden curar? */
+  transform: scale(1.0) translateX(6px);
+  filter: brightness(1.1);
+}
+
+.info-icon-image-3 {
+  /* Tercera imagen - Impacto en México */
+  transform: scale(1.05) translateX(8px);
+  filter: contrast(1.1);
+}
+
+.info-title {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #2c3e50;
+  max-width: 250px;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Sección de clínica */
+.clinic-section {
+  margin-top: 47px;
+  margin-bottom: 50px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 60px;
+}
+
+.clinic-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.clinic-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clinic-icon:hover {
+  transform: scale(1.05);
+}
+
+.clinic-icon-circle {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.clinic-icon-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.05);
+}
+
+.clinic-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+.programs-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.programs-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.programs-icon:hover {
+  transform: scale(1.05);
+}
+
+.programs-icon-circle {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.programs-icon-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.05);
+}
+
+.programs-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+.programs-description {
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  max-width: 900px;
+}
+
+/* Sección de servicios */
+.services-section {
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  border-radius: 15px;
+  padding: 25px 15px;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon-circle {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.service-icon-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.service-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c3e50;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Sección de Testimonios */
+.testimonios-section {
+  margin: 60px 0;
+  padding: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.testimonios-header {
+  text-align: left;
+  margin-bottom: 40px;
+  padding: 0 0 0 60px;
+}
+
+.testimonios-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.testimonios-subtitle {
+  font-size: 20px;
+  color: black;
+  margin: 0;
+  max-width: none;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  max-width: none;
+  margin: 0;
+}
+
+.testimonio-card {
+  aspect-ratio: 9/16;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.testimonio-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonio-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  transition: all 0.3s ease;
+}
+
+.testimonio-video[poster] {
+  background: transparent;
+}
+
+/* Forzar orientación vertical en pantalla completa */
+.testimonio-video:fullscreen {
+  object-fit: contain;
+  width: auto;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.testimonio-video:-webkit-full-screen {
+  object-fit: contain;
+  width: auto;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.testimonio-video:-moz-full-screen {
+  object-fit: contain;
+  width: auto;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.testimonio-video:-ms-fullscreen {
+  object-fit: contain;
+  width: auto;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.testimonio-thumbnail {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.play-icon {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-left: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonios-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
+  
+  .testimonios-title {
+    font-size: 28px;
+  }
+  
+  .play-button {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .play-icon {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 15px;
+  }
+  
+  .play-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .play-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clinica-content {
+    padding-top: 100px;
+  }
+  
+  .clinica-main-title,
+  .clinica-main-title-highlight {
+    font-size: 36px;
+  }
+  
+  .info-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .info-icon-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .info-icon-image {
+    width: 120px;
+    height: 120px;
+    transform: scale(1.05);
+  }
+  
+  /* Clases específicas para móviles */
+  .info-icon-image-1 {
+    transform: scale(1.05) translateX(2px);
+  }
+  
+  .info-icon-image-2 {
+    transform: scale(1.0) translateX(3px);
+  }
+  
+  .info-icon-image-3 {
+    transform: scale(1.0) translateX(4px);
+  }
+  
+  .clinic-title,
+  .programs-title {
+    font-size: 28px;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .clinica-badge {
+    position: static;
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .clinica-main-title,
+  .clinica-main-title-highlight {
+    font-size: 28px;
+  }
+  
+  .clinic-header,
+  .programs-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-card {
+    padding: 20px 15px;
+  }
+}

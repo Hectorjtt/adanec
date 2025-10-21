@@ -1,0 +1,165 @@
+.inicio {
+  min-height: calc(100vh - 120px);
+  background: white;
+  padding: 0;
+  margin-top: -90px;
+  padding-top: 50px;
+}
+
+.inicio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.inicio-content {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+}
+
+.inicio-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.inicio-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corazon-image {
+  width: 120%;
+  height: calc(100vh - 80px);
+  object-fit: contain;
+  object-position: center;
+}
+
+.main-title {
+  font-family: 'More Sugar', sans-serif;
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: #e42626;
+  text-shadow: 
+    3px 3px 0px #000000,
+    -3px -3px 0px #000000,
+    3px -3px 0px #000000,
+    -3px 3px 0px #000000,
+    0px 3px 0px #000000,
+    0px -3px 0px #000000,
+    3px 0px 0px #000000,
+    -3px 0px 0px #000000,
+    2px 2px 0px #000000,
+    -2px -2px 0px #000000,
+    2px -2px 0px #000000,
+    -2px 2px 0px #000000,
+    0px 2px 0px #000000,
+    0px -2px 0px #000000,
+    2px 0px 0px #000000,
+    -2px 0px 0px #000000;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.mission-lines {
+  margin-bottom: 30px;
+}
+
+.mission-lines h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.description {
+  font-size: 1.7rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.donacion-button {
+  background: #f4e5ff;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  animation: parpadeo-donacion 2s ease-in-out infinite;
+}
+
+.clinica-button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+  background: white;
+  border: 2px solid #e42626;
+  color: #000000;
+}
+
+.donacion-button:hover,
+.clinica-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes parpadeo-donacion {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+  }
+  
+  .mission-lines h2 {
+    font-size: 1.8rem;
+  }
+  
+  .description {
+    font-size: 2rem;
+  }
+  
+  .buttons-container {
+    justify-content: center;
+  }
+  
+  .donacion-button,
+  .clinica-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}

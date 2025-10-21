@@ -1,0 +1,129 @@
+.header {
+  background: #e42626;
+  padding: 1px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 4px solid #000000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 5px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-circle {
+  width: 180px !important;
+  height: 180px !important;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  position: absolute;
+  left: -30px;
+  top: 55%;
+  transform: translateY(-40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.header .logo-circle:hover {
+  transform: translateY(-40%);
+}
+
+
+.logo-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.navigation {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-button {
+  background: white;
+  border: 2px solid #000000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  white-space: nowrap;
+  font-family: 'More Sugar', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.nav-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.nav-button.active {
+  background: #e42626;
+  color: white;
+  border: 2px solid #000000;
+}
+
+@keyframes parpadeo {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+.nav-button.dona-button {
+  background: #f4e5ff !important;
+  color: #000000 !important;
+  border: 2px solid #000000;
+  animation: parpadeo 2s ease-in-out infinite;
+}
+
+.nav-button.dona-button.active {
+  background: #e42626 !important;
+  color: white !important;
+  border: 2px solid #000000;
+}
+
+.nav-button.dona-button:hover {
+  background: #e8d5f0 !important;
+  transform: translateY(-1px);
+}
+
+/* Badge moved to individual pages */
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Badge styles removed */
+}

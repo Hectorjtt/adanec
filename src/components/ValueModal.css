@@ -1,0 +1,160 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.modal-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.modal-icon-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-icon-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scale(2.2);
+}
+
+/* Ajustes específicos para algunos iconos */
+.modal-icon-image[alt="Calidad"] {
+  transform: scale(2.2) translateX(6px);
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-description {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+  
+  .modal-icon-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .modal-icon-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .modal-title {
+    font-size: 20px;
+  }
+  
+  .modal-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 25px 15px;
+    margin: 15px;
+  }
+  
+  .modal-icon-circle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .modal-icon-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+  }
+  
+  .modal-description {
+    font-size: 13px;
+  }
+}
