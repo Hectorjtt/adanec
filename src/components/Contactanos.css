@@ -4,6 +4,7 @@
   padding: 0;
   margin-top: -90px;
   padding-top: 50px;
+  line-height: 1;
 }
 
 .contactanos-content {
@@ -52,21 +53,23 @@
 
 .contact-details {
   flex: 1;
+  line-height: 1;
 }
 
 .contact-title {
   font-family: Arial, sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   color: #000000;
   margin: 0 0 10px 0;
   letter-spacing: 1px;
+  line-height: 1;
 }
 
 .contact-text {
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1;
   margin: 0;
 }
 
@@ -129,11 +132,11 @@
   }
   
   .contact-title {
-    font-size: 20px;
+    font-size: 24px;
   }
   
   .contact-text {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .map-container {

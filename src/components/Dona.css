@@ -3,6 +3,7 @@
   background-color: #f5f5f5;
   position: relative;
   padding: 0 0 40px 0;
+  line-height: 1;
 }
 
 .dona-badge {
@@ -38,7 +39,7 @@
   font-weight: bold;
   color: #000000;
   margin-bottom: 20px;
-  line-height: 1.1;
+  line-height: 1;
   text-align: left;
   padding-left: 18px;
   margin-left: 0;
@@ -46,10 +47,10 @@
 }
 
 .dona-main-description {
-  font-size: 20px;
+  font-size: 28px;
   color: #000000;
   margin: 0 0 15px 0;
-  line-height: 1.5;
+  line-height: 1;
   text-align: left;
   max-width: none;
   padding-left: 20px;
@@ -67,10 +68,10 @@
 }
 
 .cta-question {
-  font-size: 20px;
+  font-size: 28px;
   color: #000000;
   margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: bold;
   text-align: left !important;
   margin-left: 0 !important;
   padding-left: 20px !important;
@@ -78,10 +79,11 @@
   padding-right: 0 !important;
   width: auto !important;
   max-width: none !important;
+  line-height: 1;
 }
 
 .cta-title {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
   color: #e74c3c;
   margin-bottom: 10px;
@@ -89,10 +91,11 @@
   text-align: left;
   margin-left: 0;
   padding-left: 20px;
+  line-height: 1;
 }
 
 .cta-description {
-  font-size: 20px;
+  font-size: 28px;
   color: #000000;
   font-weight: 500;
   max-width: none;
@@ -100,6 +103,7 @@
   margin-left: 0;
   margin-bottom: -60px;
   padding-left: 20px;
+  line-height: 1;
 }
 
 /* Sección de donación */
@@ -165,13 +169,14 @@
   font-weight: bold;
   color: #2c3e50;
   margin: 0;
+  line-height: 1;
 }
 
 .card-description {
   font-size: 16px;
   color: #2c3e50;
   margin-bottom: 15px;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .donation-link {
@@ -181,6 +186,7 @@
   font-size: 14px;
   color: #2c3e50;
   border-left: 4px solid #e74c3c;
+  line-height: 1;
 }
 
 .bank-info {
@@ -200,17 +206,18 @@
 .bank-field {
   font-size: 14px;
   color: #2c3e50;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .bank-field strong {
   color: #2c3e50;
+  line-height: 1;
 }
 
 .beneficiary {
   font-size: 14px;
   color: #2c3e50;
-  line-height: 1.4;
+  line-height: 1;
   margin-top: 10px;
   padding-top: 15px;
   border-top: 1px solid #eee;
@@ -230,10 +237,12 @@
   margin-bottom: 20px;
   font-size: 14px;
   color: #2c3e50;
+  line-height: 1;
 }
 
 .contact-types p {
   margin: 5px 0;
+  line-height: 1;
 }
 
 .contact-form {
@@ -252,6 +261,7 @@
   font-weight: bold;
   color: #2c3e50;
   margin-bottom: 5px;
+  line-height: 1;
 }
 
 .form-group input,

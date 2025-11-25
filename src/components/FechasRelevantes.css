@@ -3,15 +3,15 @@
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 44px;
   font-weight: bold;
   color: #000000;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
-  font-size: 20px;
-  color: #666;
+  font-size: 24px;
+  color: black;
   margin-bottom: 40px;
   max-width: 800px;
 }
@@ -32,8 +32,8 @@
 }
 
 .calendario-imagen-container {
-  width: 120px;
-  height: 140px;
+  width: 150px;
+  height: 170px;
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@
 }
 
 .fecha-titulo {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #2c3e50;
   max-width: 200px;
@@ -81,8 +81,8 @@
   }
   
   .calendario-imagen-container {
-    width: 100px;
-    height: 120px;
+    width: 120px;
+    height: 140px;
   }
   
   .mes {
@@ -94,6 +94,6 @@
   }
   
   .fecha-titulo {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

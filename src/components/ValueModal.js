@@ -49,7 +49,7 @@ const ValueModal = ({ isOpen, onClose, value }) => {
             <img 
               src={process.env.PUBLIC_URL + currentValue.icon} 
               alt={currentValue.title} 
-              className="modal-icon-image" 
+              className={`modal-icon-image modal-icon-${value}`}
             />
           </div>
         </div>

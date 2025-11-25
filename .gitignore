@@ -1,4 +1,52 @@
-node_modules
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Misc
+.DS_Store
 .env
-dist
-build
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Videos - NO subir a GitHub (usar R2)
+public/videos/
+public/campañas-eventos/
+*.mp4
+
+# PDFs grandes - NO subir a GitHub (recomendado: mover a R2 como los videos)
+# El PDF de 14MB y otros PDFs grandes aumentan mucho el tamaño del repo
+public/cuentas/*.pdf
+
+# Archivos grandes de imágenes (considerar optimizar o usar R2)
+# Si quieres reducir más el tamaño, descomenta estas líneas:
+# public/corazon.png
+# public/dona1.png
+# public/dona2.png
+# public/circlulo.png
+# src/assets/images/transparencia.png
+# src/assets/images/dona1.png
+# src/assets/images/dona2.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+

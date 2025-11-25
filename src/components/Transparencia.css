@@ -15,7 +15,7 @@
   border-radius: 25px;
   padding: 10px 20px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: #2c3e50;
   z-index: 10;
 }
@@ -36,7 +36,7 @@
 }
 
 .page-title {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: bold;
   color: #000000;
   margin-bottom: 20px;
@@ -44,10 +44,10 @@
 }
 
 .page-subtitle {
-  font-size: 20px;
+  font-size: 26px;
   color: #000000;
   margin-bottom: 50px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .informes-list {
@@ -86,8 +86,8 @@
 }
 
 .informe-icon-circle {
-  width: 60px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #e74c3c;
   border: 2px solid black;
@@ -98,10 +98,10 @@
 }
 
 .informe-icon-image {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  transform: scale(1.2);
+  transform: scale(1.1) translateX(-1px) translateY(-1px);
 }
 
 .informe-info {
@@ -109,14 +109,14 @@
 }
 
 .informe-titulo {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   color: #000000;
   margin-bottom: 5px;
 }
 
 .informe-subtitulo {
-  font-size: 20px;
+  font-size: 22px;
   color: #666;
   margin: 0;
 }
@@ -198,7 +198,19 @@
   }
   
   .page-title {
-    font-size: 36px;
+    font-size: 44px;
+  }
+  
+  .page-subtitle {
+    font-size: 22px;
+  }
+  
+  .informe-titulo {
+    font-size: 30px;
+  }
+  
+  .informe-subtitulo {
+    font-size: 20px;
   }
   
   .child-image {
@@ -215,11 +227,19 @@
 
 @media (max-width: 480px) {
   .informe-titulo {
-    font-size: 24px;
+    font-size: 26px;
   }
   
   .page-title {
-    font-size: 28px;
+    font-size: 36px;
+  }
+  
+  .page-subtitle {
+    font-size: 20px;
+  }
+  
+  .informe-subtitulo {
+    font-size: 18px;
   }
   
   .child-image {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Clinica.css';
 import ClinicaModal from './ClinicaModal';
+import { getTestimonioVideoUrl } from '../utils/videoUrls';
 
 const Clinica = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -222,7 +223,7 @@ const Clinica = () => {
                     }
                   }}
                 >
-                  <source src={`/videos/${videoName}`} type="video/mp4" />
+                  <source src={getTestimonioVideoUrl(videoName)} type="video/mp4" />
                   Tu navegador no soporta el elemento video.
                 </video>
               </div>

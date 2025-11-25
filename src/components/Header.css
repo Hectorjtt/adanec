@@ -95,7 +95,7 @@
 }
 
 .nav-button.dona-button {
-  background: #f4e5ff !important;
+  background: #ffd700 !important;
   color: #000000 !important;
   border: 2px solid #000000;
   animation: parpadeo 2s ease-in-out infinite;
@@ -108,7 +108,7 @@
 }
 
 .nav-button.dona-button:hover {
-  background: #e8d5f0 !important;
+  background: #ffed4e !important;
   transform: translateY(-1px);
 }
 

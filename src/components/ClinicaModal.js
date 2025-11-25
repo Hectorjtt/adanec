@@ -10,11 +10,12 @@ const ClinicaModal = ({ isOpen, onClose, content }) => {
         <button className="modal-close" onClick={onClose}>×</button>
         
         <div className="modal-icon-container">
-          <div className={`modal-icon-circle ${content.title === '¿Se pueden curar?' ? 'modal-heart-background' : ''}`}>
+          <div className="modal-icon-circle">
             <img 
               src={process.env.PUBLIC_URL + content.icon} 
               alt={content.title} 
-              className="modal-icon-image" 
+              className="modal-icon-image"
+              data-title={content.title}
             />
           </div>
         </div>

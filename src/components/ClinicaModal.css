@@ -65,30 +65,34 @@
 }
 
 .modal-icon-circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid #000000;
-  background-color: white;
+  width: auto;
+  height: auto;
+  border: none;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  box-shadow: none;
 }
 
-/* Fondo morado para el modal del corazón */
-.modal-heart-background {
-  background-color: #f4e5ff;
-}
+/* Eliminado fondo morado específico */
 
 .modal-icon-image {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  transform: scale(1.8);
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 0;
+  transform: none !important;
 }
+
+/* Ajuste de espaciado: reducir el gap bajo el ícono para este modal */
+.modal-icon-image[data-title="¿Qué son las cardiopatías?"] {
+  margin-bottom: -12px;
+}
+
+/* Ajustes específicos para cada modal de clínica basados en el título */
+/* Se eliminan ajustes por-título para mantener uniformidad */
 
 .modal-title {
   font-size: 24px;
@@ -116,14 +120,9 @@
     margin: 20px;
   }
   
-  .modal-icon-circle {
-    width: 80px;
-    height: 80px;
-  }
-  
   .modal-icon-image {
-    width: 60px;
-    height: 60px;
+    width: 110px;
+    height: 110px;
   }
   
   .modal-title {
@@ -141,14 +140,9 @@
     margin: 15px;
   }
   
-  .modal-icon-circle {
-    width: 70px;
-    height: 70px;
-  }
-  
   .modal-icon-image {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
   }
   
   .modal-title {

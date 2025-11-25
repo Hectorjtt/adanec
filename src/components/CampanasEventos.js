@@ -1,5 +1,6 @@
 import React from 'react';
 import './CampanasEventos.css';
+import { getCampanaVideoUrl } from '../utils/videoUrls';
 
 const CampanasEventos = () => {
   const eventos = [
@@ -75,7 +76,7 @@ const CampanasEventos = () => {
                   }
                 }}
               >
-                <source src={`/campañas-eventos/${evento.video}`} type="video/mp4" />
+                <source src={getCampanaVideoUrl(evento.video)} type="video/mp4" />
                 Tu navegador no soporta el elemento video.
               </video>
             </div>

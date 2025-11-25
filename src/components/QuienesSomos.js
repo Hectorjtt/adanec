@@ -16,22 +16,71 @@ const QuienesSomos = () => {
     setModalOpen(false);
   };
 
-  // Lista de todas las empresas
+  // Lista de todas las empresas (autoactualizada con archivos actuales en public/empresas)
   const empresas = [
-    'acmes.png', 'amaerimed-hospitals.png', 'amerimed hospital.png', 'arca continental.png',
-    'bebe cardio.png', 'bebecardio.png', 'cemefi-logo.00f654bbfe8c08205664.png', 'cemefi.png',
-    'century fasteners.png', 'chapa.png', 'de acero.png', 'elite bridge.png', 'else.png',
-    'escalando fronteras.png', 'escalandofronteras.png', 'farmacias iguales.png', 'field.png',
-    'fomento moral.png', 'frisa.png', 'fundacion clisa.png', 'gob nl.png', 'gp grupo.png',
-    'HEB.png', 'himalaya colegio.png', 'jesús montemayor.png', 'kenworth.png',
-    'lab hidalgo m.png', 'latin colegio.png', 'Logo_de_la_UANL.svg.png', 'logoNiños360.png',
-    'lux.png', 'maat advisory.png', 'medicina.png', 'medtronic.png', 'monte de piedad.png',
-    'niños 360.png', 'operacion corazon.png', 'operacioncorazon.jpg', 'oxxo.png',
-    'promax.png', 'salvando latidos.png', 'SalvandoLatidos.png', 'sanatorio español.png',
-    'sec igualdad nl.png', 'sec salud nl.png', 'seca.png', 'ser y crecer.png',
-    'serycrecer.png', 'smart.png', 'tec salud.png', 'tecmilenio.png', 'tecnológico mty.png',
-    'ternium.png', 'terumo.png', 'trayecto grupo.png', 'uanl.png', 'udem.png',
-    'uni del paciente.png', 'uni lux.png', 'yco.png'
+    '02 Brillamont® Blue Logo.png',
+    '1200px-Ternium-Logo-1.jpg',
+    '7-LATINAMERICAN.png',
+    'alenlogo.png',
+    'amaerimed-hospitals.png',
+    'Arca_continental_logo.png',
+    'asfm.png',
+    'BanBajío_Logotipo.png',
+    'bebecardio.png',
+    'callcom.png',
+    'cemefi.png',
+    'centuryfastenersmex.png',
+    'clisa.png',
+    'cocoasociacion.jpg',
+    'comunidar.png',
+    'DEACERO.png',
+    'elitebridge.png',
+    'Escalando_Fronteras_Official_Logo.png',
+    'farmacias-iguales.jpg',
+    'femsa.png',
+    'field_fastener_mexico_logo.jpg',
+    'fomentomoral.png',
+    'frisafundacion.png',
+    'Fundacion-Jesus-M-Montemayor-Logo.png',
+    'Fundacion-Promax-1-300x300.png',
+    'hidalgomaldonado.png',
+    'himalaya logo.jpeg',
+    'hotelnuve.png',
+    'hvcirugia.png',
+    'logo gp.jpg',
+    'logo secretaria nl.png',
+    'logo smart.png',
+    'logo_chapa.jpg',
+    'Logo_de_la_Secretaría_de_Igualdad_e_Inclusión_de_Nuevo_León_(2021).svg.png',
+    'Logo_de_la_Secretaría_de_Salud_de_Nuevo_León_(2021).svg.png',
+    'Logo_de_la_UANL.svg.png',
+    'Logo_of_the_HEB_Grocery_Company,_LP.png',
+    'Logo-ACMES-completo-Trans-300x113.png',
+    'logo-else_1.png',
+    'Logo-Hospital-Farallon.png',
+    'Logo-Trayecto.png',
+    'maatadvisory.png',
+    'maximacomercial.png',
+    'medtronic-logo.png',
+    'montedepiedadlogo.jpg',
+    'niños360logo.jpeg',
+    'operacioncorazon.jpeg',
+    'pkf.jpeg',
+    'png-transparent-kenworth-red-logo-car-logos-thumbnail.png',
+    'quintadorada.jpg',
+    'ruba.png',
+    'salvandolatidos.jpg',
+    'sanatorioespañol.png',
+    'seca.png',
+    'serycrecer.png',
+    'tecmilenio.png',
+    'tecnologico-de-monterrey-blue.png',
+    'Terumo.svg.png',
+    'treviñoelizondo.png',
+    'udem-logotipo-principal.png',
+    'universidadlux.png',
+    'upf logo.png',
+    'yco.png'
   ];
 
   const itemsPerSlide = 9;
@@ -74,7 +123,7 @@ const QuienesSomos = () => {
           <div className="info-content">
             <h2 className="info-title">ADANEC (Asociación de Ayuda a Niños en Estado Crítico A.B.P.)</h2>
             <p className="info-text">
-              ADANEC es una organización legalmente constituida el 15 de agosto de 1995 en Monterrey, Nuevo León, México. Nuestro compromiso es atender a bebés, niñas, niños y adolescentes en un estado crítico de salud, enfrentando condiciones que ponen en riesgo su vida. Nos esforzamos por garantizar diagnósticos precisos y especializados, facilitando así una atención rápida y eficiente para prevenir pérdidas de vida en casos de enfermedades tratables.
+              Es una organización legalmente constituida el 15 de agosto de 1995 en Monterrey, Nuevo León, México. Nuestro compromiso es atender a bebés, niñas, niños y adolescentes en un estado crítico de salud, enfrentando condiciones que ponen en riesgo su vida. Nos esforzamos por garantizar diagnósticos precisos y especializados, facilitando así una atención rápida y eficiente para prevenir pérdidas de vida en casos de enfermedades tratables.
             </p>
           </div>
         </div>
