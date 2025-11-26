@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './Dona.css';
+import dona1Img from '../assets/images/dona1.png';
+import dona2Img from '../assets/images/dona2.png';
+import dona6Img from '../assets/images/dona6.png';
+import dona7Img from '../assets/images/dona7.png';
 
 const Dona = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +57,7 @@ const Dona = () => {
               <div className="card-header">
                 <div className="card-icon">
                   <img 
-                    src="/dona6.png"
+                    src={dona6Img}
                     alt="Dona en línea"
                     className="card-icon-image"
                   />
@@ -73,7 +77,7 @@ const Dona = () => {
               <div className="card-header">
                 <div className="card-icon">
                   <img 
-                    src="/dona6.png"
+                    src={dona6Img}
                     alt="Transferencia bancaria"
                     className="card-icon-image"
                   />
@@ -118,7 +122,7 @@ const Dona = () => {
               <div className="card-header">
                 <div className="card-icon">
                   <img 
-                    src="/dona7.png"
+                    src={dona7Img}
                     alt="Contáctanos"
                     className="card-icon-image"
                   />
@@ -181,10 +185,10 @@ const Dona = () => {
         {/* Sección de imágenes */}
           <div className="images-section">
             <div className="image-placeholder left-image">
-              <img src="/dona1.png" alt="Imagen de niños y familias" />
+              <img src={dona1Img} alt="Imagen de niños y familias" />
             </div>
               <div className="image-placeholder right-image">
-                <img src="/dona2.png" alt="Imagen del equipo médico" />
+                <img src={dona2Img} alt="Imagen del equipo médico" />
               </div>
           </div>
       </div>

@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import './Clinica.css';
 import ClinicaModal from './ClinicaModal';
 import { getTestimonioVideoUrl } from '../utils/videoUrls';
+import dona4Img from '../assets/images/dona4.png';
+import dona5Img from '../assets/images/dona5.png';
+import clinica1Img from '../assets/images/clinica1.png';
+import clinica2Img from '../assets/images/clinica2.png';
+import clinica3Img from '../assets/images/clinica3.png';
+import clinica4Img from '../assets/images/clinica4.png';
+import clinica5Img from '../assets/images/clinica5.png';
+import clinica6Img from '../assets/images/clinica6.png';
+import clinica7Img from '../assets/images/clinica7.png';
+import clinica8Img from '../assets/images/clinica8.png';
 
 const Clinica = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -20,19 +30,19 @@ const Clinica = () => {
     {
       titulo: '¿Qué son las cardiopatías?',
       icono: '👶',
-      imagen: '/clinica1.png',
+      imagen: clinica1Img,
       description: 'Las cardiopatías congénitas son defectos en la estructura del corazón que se originan por alteraciones durante el desarrollo fetal. Se consideran la patología congénita más frecuente, con un alto número de nacimientos afectados cada día.'
     },
     {
       titulo: '¿Se pueden curar?',
       icono: '❤️',
-      imagen: '/clinica2.png',
+      imagen: clinica2Img,
       description: 'Las cardiopatías congénitas son una patología crónica que requiere atención especializada de por vida. Pueden ser simples o complejas, afectando uno o varios componentes del corazón. El tratamiento varía según cada caso: algunos bebés requieren cirugía pocos días después de nacer, otros meses o años después, y muchos deben someterse a múltiples intervenciones a lo largo de su vida.'
     },
     {
       titulo: 'Impacto en México',
       icono: '🇲🇽',
-      imagen: '/clinica3.png',
+      imagen: clinica3Img,
       description: 'Las malformaciones congénitas representan la segunda causa de muerte en niños en México, dentro de las cuales las cardiopatías congénitas ocupan el primer lugar como la principal causa de fallecimiento en esta población. En México nacen al año un promedio de 18,000 niños con algún padecimiento del corazón. En todo el país se realizan anualmente cerca de 5,000 cirugías de corazón quedando un rezago de 13,000 niños sin atención médica quirúrgica oportuna.'
     }
   ];
@@ -41,35 +51,35 @@ const Clinica = () => {
     {
       titulo: 'Cirugías Pequeños Corazones',
       icono: '❤️',
-      imagen: '/clinica4.png',
+      imagen: clinica4Img,
       descripcion: 'Cirugías especializadas para niños',
       description: 'Con el Programa de Pequeños Corazones por ADANEC, buscamos mejorar la calidad de vida de los niños mexicanos que sufren de enfermedades del corazón, brindándoles una atención médica adecuada y oportuna, y así contribuir a reducir el impacto de estas enfermedades en nuestra sociedad. Realizamos campañas de diagnóstico y cirugías de corazón, hasta el tratamiento post-operatorio.'
     },
     {
       titulo: 'Medicinas y tratamientos',
       icono: '🏥',
-      imagen: '/clinica5.png',
+      imagen: clinica5Img,
       descripcion: 'Tratamientos médicos especializados',
       description: 'El programa de medicina y tratamientos brinda asistencia en la adquisición de medicamentos necesarios para los pacientes, ya sea provenientes de consultas pediátricas, neurología, cardiología y oftalmología. Nos aseguramos de que los niños tengan acceso a los medicamentos específicos que necesitan para su tratamiento.'
     },
     {
       titulo: 'Consulta y diagnóstico',
       icono: '📋',
-      imagen: '/clinica6.png',
+      imagen: clinica6Img,
       descripcion: 'Diagnósticos tempranos y precisos',
       description: 'Este programa ofrece consultas especializadas en diversas áreas médicas, como psicología, neurología, oftalmología, endocrinología, otorrinolaringología, genética, nutrición, neurodesarrollo, cardiología y medicina fetal. Referimos a los pacientes a las consultas correspondientes y brindamos seguimiento para evaluar la evolución de su diagnóstico.'
     },
     {
       titulo: 'Alimentación',
       icono: '🍎',
-      imagen: '/clinica7.png',
+      imagen: clinica7Img,
       descripcion: 'Programas nutricionales especializados',
       description: 'Este programa de alimentación ofrece consultas de nutrición que incluyen valoración nutricional, plan de alimentación personalizado y seguimiento continuo. Trabajamos para garantizar que los niños reciban una nutrición adecuada que contribuya a su bienestar y recuperación.'
     },
     {
       titulo: 'Medicina y cirugía fetal',
       icono: '🤱',
-      imagen: '/clinica8.png',
+      imagen: clinica8Img,
       descripcion: 'Atención médica prenatal especializada',
       description: 'Nuestro objetivo es proporcionar los insumos necesarios para la atención de bebes en gestación que han sido diagnosticados con alguna malformación congénita como la espina bífida, ciertas malformaciones del corazón, atresias esofágicas, estenosis pulmonares.'
     }
@@ -116,12 +126,12 @@ const Clinica = () => {
           <div className="clinic-header">
             <div className="clinic-icon" onClick={() => handleIconClick({
               title: 'Clínica Pediátrica',
-              icon: '/dona4.png',
+              icon: dona4Img,
               description: 'La Clínica Pediátrica ADANEC es una clínica especializada en la atención médica infantil. Ofrecemos consultas en diversas subespecialidades, como Pediatría en el Desarrollo, Neurología, Genética, Oftalmología, Psicología, Nutrición y Cardiología. Nuestro objetivo es brindar una atención integral y personalizada, en un ambiente acogedor para los niños y sus familias.'
             })}>
               <div className="clinic-icon-circle">
                 <img 
-                  src="/dona4.png"
+                  src={dona4Img}
                   alt="Clínica Pediátrica"
                   className="clinic-icon-image"
                 />
@@ -133,12 +143,12 @@ const Clinica = () => {
           <div className="programs-header">
             <div className="programs-icon" onClick={() => handleIconClick({
               title: 'Programas',
-              icon: '/dona5.png',
+              icon: dona5Img,
               description: 'Los programas de ADANEC brindan diagnósticos oportunos, cirugías especializadas, atención fetal, nutrición, medicinas y una clínica pediátrica para mejorar la salud y calidad de vida de niños con enfermedades del corazón.'
             })}>
               <div className="programs-icon-circle">
                 <img 
-                  src="/dona5.png"
+                  src={dona5Img}
                   alt="Programas"
                   className="programs-icon-image"
                 />

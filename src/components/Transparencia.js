@@ -1,6 +1,7 @@
 import React from 'react';
 import './Transparencia.css';
 import imagenTransparencia from '../assets/images/transparencia.png';
+import informesImg from '../assets/images/informes.png';
 
 const Transparencia = () => {
   const informes = [
@@ -69,7 +70,7 @@ const Transparencia = () => {
                 <div className="informe-icon">
                   <div className="informe-icon-circle">
                     <img 
-                      src="/informes.png" 
+                      src={informesImg} 
                       alt="Informe"
                       className="informe-icon-image"
                     />

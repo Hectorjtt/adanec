@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import './QuienesSomos.css';
 import ValueModal from './ValueModal';
+import quienes1Img from '../assets/images/quienes1.png';
+import quienes2Img from '../assets/images/quienes2.png';
+import quienes3Img from '../assets/images/quienes3.png';
+import quienes4Img from '../assets/images/quienes4.png';
+import mv1Img from '../assets/images/mv1.png';
+import mv2Img from '../assets/images/mv2.png';
+import mv3Img from '../assets/images/mv3.png';
+import mapaImg from '../assets/images/mapa.png';
+import circluloImg from '../assets/images/circlulo.png';
 
 const QuienesSomos = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -134,7 +143,7 @@ const QuienesSomos = () => {
             <div className="stat-card">
               <div className="stat-icon">
                 <div className="stat-icon-circle">
-                  <img src="/quienes1.png" alt="Cirugías de corazón" className="stat-icon-image" />
+                  <img src={quienes1Img} alt="Cirugías de corazón" className="stat-icon-image" />
                 </div>
               </div>
               <div className="stat-text">
@@ -148,7 +157,7 @@ const QuienesSomos = () => {
             <div className="stat-card">
               <div className="stat-icon">
                 <div className="stat-icon-circle">
-                  <img src="/quienes2.png" alt="Servicios médicos" className="stat-icon-image" />
+                  <img src={quienes2Img} alt="Servicios médicos" className="stat-icon-image" />
                 </div>
               </div>
               <div className="stat-text">
@@ -160,7 +169,7 @@ const QuienesSomos = () => {
             <div className="stat-card">
               <div className="stat-icon">
                 <div className="stat-icon-circle">
-                  <img src="/quienes3.png" alt="Diagnósticos" className="stat-icon-image" />
+                  <img src={quienes3Img} alt="Diagnósticos" className="stat-icon-image" />
                 </div>
               </div>
               <div className="stat-text">
@@ -173,7 +182,7 @@ const QuienesSomos = () => {
             <div className="stat-card">
               <div className="stat-icon">
                 <div className="stat-icon-circle">
-                  <img src="/quienes4.png" alt="Cirugías fetales" className="stat-icon-image" />
+                  <img src={quienes4Img} alt="Cirugías fetales" className="stat-icon-image" />
                 </div>
               </div>
               <div className="stat-text">
@@ -190,7 +199,7 @@ const QuienesSomos = () => {
               <div className="mv-header">
                 <div className="mv-icon">
                   <div className="mv-icon-circle">
-                    <img src="/mv1.png" alt="Misión" className="mv-icon-image" />
+                    <img src={mv1Img} alt="Misión" className="mv-icon-image" />
                   </div>
                 </div>
                 <h3 className="mv-title">MISIÓN</h3>
@@ -208,7 +217,7 @@ const QuienesSomos = () => {
               <div className="mv-header">
                 <div className="mv-icon">
                   <div className="mv-icon-circle">
-                    <img src="/mv2.png" alt="Visión" className="mv-icon-image" />
+                    <img src={mv2Img} alt="Visión" className="mv-icon-image" />
                   </div>
                 </div>
                 <h3 className="mv-title">VISIÓN</h3>
@@ -225,7 +234,7 @@ const QuienesSomos = () => {
               <div className="mv-header">
                 <div className="mv-icon">
                   <div className="mv-icon-circle">
-                    <img src="/mv3.png" alt="Objetivo" className="mv-icon-image" />
+                    <img src={mv3Img} alt="Objetivo" className="mv-icon-image" />
                   </div>
                 </div>
                 <h3 className="mv-title">OBJETIVO</h3>
@@ -308,11 +317,11 @@ const QuienesSomos = () => {
             
             <div className="coverage-visuals">
               <div className="map-container">
-                <img src="/mapa.png" alt="Mapa de México" className="mapa-image" />
+                <img src={mapaImg} alt="Mapa de México" className="mapa-image" />
               </div>
               
               <div className="staff-photo-container">
-                <img src="/circlulo.png" alt="Staff médico" className="staff-photo" />
+                <img src={circluloImg} alt="Staff médico" className="staff-photo" />
               </div>
             </div>
           </div>

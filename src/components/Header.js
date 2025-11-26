@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import logotipoImg from '../assets/images/logotipo.png';
 
 const Header = ({ currentPage, setCurrentPage }) => {
   const handleNavClick = (page) => {
@@ -11,7 +12,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
       <div className="header-container">
         <div className="logo-section">
           <div className="logo-circle" onClick={() => handleNavClick('inicio')}>
-            <img src="/logotipo.png" alt="ADANEC" className="logo-image" />
+            <img src={logotipoImg} alt="ADANEC" className="logo-image" />
           </div>
         </div>
         

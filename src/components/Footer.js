@@ -8,6 +8,7 @@ import emailImg from '../assets/images/footer/email.png';
 import facebookImg from '../assets/images/footer/facebook.png';
 import instagramImg from '../assets/images/footer/instagram.png';
 import donaImg from '../assets/images/footer/dona.png';
+import qrImg from '../assets/images/qr.png';
 
 const Footer = () => {
   const handleDonaClick = () => {
@@ -90,7 +91,7 @@ const Footer = () => {
 
         <div className="footer-section qr-section">
           <div className="qr-code">
-            <img src="/qr.png" alt="QR Code" className="qr-image" />
+            <img src={qrImg} alt="QR Code" className="qr-image" />
           </div>
         </div>
 

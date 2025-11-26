@@ -1,5 +1,6 @@
 import React from 'react';
 import './Inicio.css';
+import corazonImg from '../assets/images/corazon.png';
 
 const Inicio = ({ setCurrentPage }) => {
   const handleDonacionClick = () => {
@@ -33,7 +34,7 @@ const Inicio = ({ setCurrentPage }) => {
             </div>
           </div>
           <div className="inicio-right">
-            <img src="/corazon.png" alt="Niña sonriendo" className="corazon-image" />
+            <img src={corazonImg} alt="Niña sonriendo" className="corazon-image" />
           </div>
         </div>
       </div>
